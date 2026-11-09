@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75", "wheel>=0.45"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hostdoctor"
+version = "0.1.0"
+description = "Read-only, privacy-conscious Linux host diagnostics."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Trat1100"}]
+dependencies = []
+
+[project.scripts]
+hostdoctor = "hostdoctor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hostdoctor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
