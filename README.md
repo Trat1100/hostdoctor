@@ -1,5 +1,11 @@
 # HostDoctor
 
+## Live demo
+
+![HostDoctor actual command-line output](docs/screenshots/hostdoctor-live-demo.svg)
+
+Live run from GitHub-hosted Ubuntu. Resource figures change between runs; this is an ephemeral runner snapshot, not production telemetry.
+
 HostDoctor creates a read-only first-response snapshot for Linux hosts. It checks memory, load, root filesystem and inode capacity, listening socket count, and failed systemd services, then emits text or JSON with threshold-based exit codes.
 
 ## Privacy defaults
