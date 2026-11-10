@@ -24,4 +24,5 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install --require-hashes -r requirements-dev.lock
       - run: python -m pip install --no-deps --no-build-isolation -e .
+      - run: hostdoctor collect --format text
       - run: python -m pytest -q
